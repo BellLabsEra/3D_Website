@@ -32,8 +32,8 @@ function animate() {
 
     renderer.render(scene, camera);
 }
-
-if (WebGL.isWebGLAvilable()) {
+// WebGL Compatibility Check
+if (WebGL.isWebGLAvailable()) {
     // Initiate function or other initializations here
     animate();
 } else {
